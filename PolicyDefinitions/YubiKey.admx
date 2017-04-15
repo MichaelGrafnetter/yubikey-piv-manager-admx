@@ -1,0 +1,140 @@
+<policyDefinitions revision="1.0" schemaVersion="1.0">
+  <policyNamespaces>
+    <target prefix="yubikey" namespace="Yubico.YubiKey.Policies.PIV.Manager" />
+    <using prefix="windows" namespace="Microsoft.Policies.Windows" />
+  </policyNamespaces>
+  <resources minRequiredRevision="1.0" />
+  <categories>
+    <category name="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" displayName="$(string.CAT_79BEA359_E17F_469A_8036_A886EA714E4E)" />
+  </categories>
+  <policies>
+    <policy name="POL_1F087619_B054_473D_8E6D_1FCB28B45A88" class="User" displayName="$(string.POL_1F087619_B054_473D_8E6D_1FCB28B45A88)" explainText="$(string.POL_1F087619_B054_473D_8E6D_1FCB28B45A88_Help)" presentation="$(presentation.POL_1F087619_B054_473D_8E6D_1FCB28B45A88)" key="Software\Yubico\YubiKey PIV Manager" valueName="touch_policy">
+      <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+    </policy>
+    <policy name="POL_2294FFA5_4434_4D0E_8822_50525EA98221" class="User" displayName="$(string.POL_2294FFA5_4434_4D0E_8822_50525EA98221)" explainText="$(string.POL_2294FFA5_4434_4D0E_8822_50525EA98221_Help)" presentation="$(presentation.POL_2294FFA5_4434_4D0E_8822_50525EA98221)" key="Software\Yubico\YubiKey PIV Manager">
+      <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+      <elements>
+        <enum id="DST_49AEAAFA_ADA3_41A9_871D_072A3291859E" valueName="algorithm" required="true">
+          <item displayName="$(string.ITM_EA466378_DCBB_4727_8524_12776C1EA6F0)">
+            <value>
+              <string>RSA1024</string>
+            </value>
+          </item>
+          <item displayName="$(string.ITM_F0E26401_6589_434E_A820_06FF0D6A7D73)">
+            <value>
+              <string>RSA2048</string>
+            </value>
+          </item>
+          <item displayName="$(string.ITM_1D3D7DF0_880F_4D93_9186_91AC3261FB43)">
+            <value>
+              <string>ECC256</string>
+            </value>
+          </item>
+          <item displayName="$(string.ITM_981F8BE3_9B26_48AB_90FE_E6FCBF16F6E5)">
+            <value>
+              <string>ECC384</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="POL_9425A436_8247_452E_AA50_1F7D7FD71556" class="User" displayName="$(string.POL_9425A436_8247_452E_AA50_1F7D7FD71556)" explainText="$(string.POL_9425A436_8247_452E_AA50_1F7D7FD71556_Help)" presentation="$(presentation.POL_9425A436_8247_452E_AA50_1F7D7FD71556)" key="Software\Yubico\YubiKey PIV Manager">
+      <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+      <elements>
+        <text id="TXT_2EA5BA43_F51E_424E_96BC_1B3A96FFF3E1" valueName="card_reader" required="true" maxLength="256" />
+      </elements>
+    </policy>
+    <policy name="POL_BD4C729A_C091_4318_B5D7_A195A3825966" class="User" displayName="$(string.POL_BD4C729A_C091_4318_B5D7_A195A3825966)" explainText="$(string.POL_BD4C729A_C091_4318_B5D7_A195A3825966_Help)" presentation="$(presentation.POL_BD4C729A_C091_4318_B5D7_A195A3825966)" key="Software\Yubico\YubiKey PIV Manager" valueName="certreq_template">
+      <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+      <elements>
+        <text id="TXT_684E12BE_4725_4F22_98DF_746C2B258FF4" key="Software\Yubico\YubiKey PIV Manager" valueName="certreq_template" required="true" maxLength="256" />
+      </elements>
+    </policy>
+    <policy name="POL_233A3476_0D2B_4738_8366_D67FEA06603C" class="User" displayName="$(string.POL_233A3476_0D2B_4738_8366_D67FEA06603C)" explainText="$(string.POL_233A3476_0D2B_4738_8366_D67FEA06603C_Help)" key="Software\Yubico\YubiKey PIV Manager" valueName="complex_pins">
+      <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+    </policy>
+    <policy name="POL_C42A1915_6924_43A9_BE0D_82114DFF9D5B" class="User" displayName="$(string.POL_C42A1915_6924_43A9_BE0D_82114DFF9D5B)" explainText="$(string.POL_C42A1915_6924_43A9_BE0D_82114DFF9D5B_Help)" key="Software\Yubico\YubiKey PIV Manager" valueName="enable_import">
+      <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+    </policy>
+    <policy name="POL_91E61170_5C0B_4043_A188_7D5F04A821D4" class="User" displayName="$(string.POL_91E61170_5C0B_4043_A188_7D5F04A821D4)" explainText="$(string.POL_91E61170_5C0B_4043_A188_7D5F04A821D4_Help)" key="Software\Yubico\YubiKey PIV Manager" valueName="pin_as_key">
+      <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+    </policy>
+    <policy name="POL_3DA9E7C1_DBA7_449F_B646_A2B5B59A968B" class="User" displayName="$(string.POL_3DA9E7C1_DBA7_449F_B646_A2B5B59A968B)" explainText="$(string.POL_3DA9E7C1_DBA7_449F_B646_A2B5B59A968B_Help)" presentation="$(presentation.POL_3DA9E7C1_DBA7_449F_B646_A2B5B59A968B)" key="Software\Yubico\YubiKey PIV Manager" valueName="pin_expiration">
+      <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+      <elements>
+        <decimal id="DXT_834F33B1_050F_4255_B351_854CBFECBDF6" key="Software\Yubico\YubiKey PIV Manager" valueName="pin_expiration" required="true" maxValue="1096" />
+      </elements>
+    </policy>
+    <policy name="POL_CB16580F_C028_4345_8D69_4D5EEC964065" class="User" displayName="$(string.POL_CB16580F_C028_4345_8D69_4D5EEC964065)" explainText="$(string.POL_CB16580F_C028_4345_8D69_4D5EEC964065_Help)" presentation="$(presentation.POL_CB16580F_C028_4345_8D69_4D5EEC964065)" key="Software\Yubico\YubiKey PIV Manager" valueName="pin_policy">
+      <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+      <elements>
+        <enum id="DST_AE1ED5B6_55BD_49CA_8D39_1D76D9390380" key="Software\Yubico\YubiKey PIV Manager" valueName="pin_policy" required="true">
+          <item displayName="$(string.ITM_E42AED55_82E8_46AA_B15F_7873B2B0ADDF)">
+            <value>
+              <string>default</string>
+            </value>
+          </item>
+          <item displayName="$(string.ITM_83C17027_9DDB_45D7_92E0_8BBA6845575A)">
+            <value>
+              <string>never</string>
+            </value>
+          </item>
+          <item displayName="$(string.ITM_DC018F0A_D6AD_4366_94E4_003AEE1CFF0C)">
+            <value>
+              <string>once</string>
+            </value>
+          </item>
+          <item displayName="$(string.ITM_A962F348_952F_4FF8_ACCD_3D043C8ACA80)">
+            <value>
+              <string>always</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="POL_545369F5_2903_4EFE_B7E2_114FC77F565B" class="User" displayName="$(string.POL_545369F5_2903_4EFE_B7E2_114FC77F565B)" explainText="$(string.POL_545369F5_2903_4EFE_B7E2_114FC77F565B_Help)" presentation="$(presentation.POL_545369F5_2903_4EFE_B7E2_114FC77F565B)" key="Software\Yubico\YubiKey PIV Manager" valueName="pin_policy_slots">
+      <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+      <elements>
+        <list id="LST_66B13B7A_E275_499B_916A_A6D0CFFE6284" key="Software\Yubico\YubiKey PIV Manager" valueName="pin_policy_slots" additive="true" />
+      </elements>
+    </policy>
+    <policy name="POL_875D8BD9_862A_4994_B8AD_7DCAC251FFD8" class="User" displayName="$(string.POL_875D8BD9_862A_4994_B8AD_7DCAC251FFD8)" explainText="$(string.POL_875D8BD9_862A_4994_B8AD_7DCAC251FFD8_Help)" presentation="$(presentation.POL_875D8BD9_862A_4994_B8AD_7DCAC251FFD8)" key="Software\Yubico\YubiKey PIV Manager" valueName="shown_outs">
+      <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+      <elements>
+        <list id="LST_0DED5C32_D395_46B3_ACF0_A760FC4F0EDB" key="shown_outs" valueName="Software\Yubico\YubiKey PIV Manager" additive="true" />
+      </elements>
+    </policy>
+    <policy name="POL_5E153A75_EF31_4D81_BAD1_95C3E219DFFC" class="User" displayName="$(string.POL_5E153A75_EF31_4D81_BAD1_95C3E219DFFC)" explainText="$(string.POL_5E153A75_EF31_4D81_BAD1_95C3E219DFFC_Help)" presentation="$(presentation.POL_5E153A75_EF31_4D81_BAD1_95C3E219DFFC)" key="Software\Yubico\YubiKey PIV Manager" valueName="shown_slots">
+      <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+      <elements>
+        <list id="LST_BAD05216_5296_49D6_94A7_354E7B38C9DE" key="Software\Yubico\YubiKey PIV Manager" valueName="shown_slots" additive="true" />
+      </elements>
+    </policy>
+    <policy name="POL_2B7E76CC_4EE2_46DA_A06E_8CBCB670F1AA" class="User" displayName="$(string.POL_2B7E76CC_4EE2_46DA_A06E_8CBCB670F1AA)" explainText="$(string.POL_2B7E76CC_4EE2_46DA_A06E_8CBCB670F1AA_Help)" presentation="$(presentation.POL_2B7E76CC_4EE2_46DA_A06E_8CBCB670F1AA)" key="Software\Yubico\YubiKey PIV Manager" valueName="subject">
+      <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+      <elements>
+        <text id="TXT_CCA871ED_9038_4E9D_89F5_8394771241DF" key="Software\Yubico\YubiKey PIV Manager" valueName="subject" required="true" maxLength="256" />
+      </elements>
+    </policy>
+    <policy name="POL_87F0FBB3_7026_4268_B311_C9C81E7093EC" class="User" displayName="$(string.POL_87F0FBB3_7026_4268_B311_C9C81E7093EC)" explainText="$(string.POL_87F0FBB3_7026_4268_B311_C9C81E7093EC_Help)" presentation="$(presentation.POL_87F0FBB3_7026_4268_B311_C9C81E7093EC)" key="Software\Yubico\YubiKey PIV Manager" valueName="touch_policy_slots">
+      <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
+      <supportedOn ref="windows:SUPPORTED_WindowsVista" />
+      <elements>
+        <list id="LST_EAE61858_8179_476C_B405_31FB2B8BE40C" key="Software\Yubico\YubiKey PIV Manager" valueName="touch_policy_slots" additive="true" />
+      </elements>
+    </policy>
+  </policies>
+</policyDefinitions>
