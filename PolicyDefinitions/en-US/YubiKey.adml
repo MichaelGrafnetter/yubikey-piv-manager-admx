@@ -1,4 +1,6 @@
-﻿<policyDefinitionResources revision="1.0" schemaVersion="1.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2017 Michael Grafnetter  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
   <displayName>YubiKey PIV Manager</displayName>
   <description>YubiKey PIV Manager Settings</description>
   <resources>
@@ -57,15 +59,11 @@ Default value is none.</string>
       <presentation id="POL_9425A436_8247_452E_AA50_1F7D7FD71556">
         <textBox refId="TXT_2EA5BA43_F51E_424E_96BC_1B3A96FFF3E1">
           <label>Card reader name</label>
-          <defaultValue>
-          </defaultValue>
         </textBox>
       </presentation>
       <presentation id="POL_BD4C729A_C091_4318_B5D7_A195A3825966">
         <textBox refId="TXT_684E12BE_4725_4F22_98DF_746C2B258FF4">
           <label>Certificate template</label>
-          <defaultValue>
-          </defaultValue>
         </textBox>
       </presentation>
       <presentation id="POL_3DA9E7C1_DBA7_449F_B646_A2B5B59A968B">
@@ -75,13 +73,13 @@ Default value is none.</string>
         <dropdownList refId="DST_AE1ED5B6_55BD_49CA_8D39_1D76D9390380" defaultItem="0">Policy</dropdownList>
       </presentation>
       <presentation id="POL_545369F5_2903_4EFE_B7E2_114FC77F565B">
-        <listBox refId="LST_66B13B7A_E275_499B_916A_A6D0CFFE6284">Slots</listBox>
+        <multiTextBox refId="LST_66B13B7A_E275_499B_916A_A6D0CFFE6284">Slots</multiTextBox>
       </presentation>
       <presentation id="POL_875D8BD9_862A_4994_B8AD_7DCAC251FFD8">
-        <listBox refId="LST_0DED5C32_D395_46B3_ACF0_A760FC4F0EDB">Formats</listBox>
+        <multiTextBox refId="LST_0DED5C32_D395_46B3_ACF0_A760FC4F0EDB">Formats</multiTextBox>
       </presentation>
       <presentation id="POL_5E153A75_EF31_4D81_BAD1_95C3E219DFFC">
-        <listBox refId="LST_BAD05216_5296_49D6_94A7_354E7B38C9DE">Slots</listBox>
+        <multiTextBox refId="LST_BAD05216_5296_49D6_94A7_354E7B38C9DE">Slots</multiTextBox>
       </presentation>
       <presentation id="POL_2B7E76CC_4EE2_46DA_A06E_8CBCB670F1AA">
         <textBox refId="TXT_CCA871ED_9038_4E9D_89F5_8394771241DF">
@@ -90,7 +88,7 @@ Default value is none.</string>
         </textBox>
       </presentation>
       <presentation id="POL_87F0FBB3_7026_4268_B311_C9C81E7093EC">
-        <listBox refId="LST_EAE61858_8179_476C_B405_31FB2B8BE40C">Slots</listBox>
+        <multiTextBox refId="LST_EAE61858_8179_476C_B405_31FB2B8BE40C">Slots</multiTextBox>
       </presentation>
     </presentationTable>
   </resources>

@@ -1,4 +1,6 @@
-<policyDefinitions revision="1.0" schemaVersion="1.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2017 Michael Grafnetter  -->
+<policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
   <policyNamespaces>
     <target prefix="yubikey" namespace="Yubico.YubiKey.Policies.PIV.Manager" />
     <using prefix="windows" namespace="Microsoft.Policies.Windows" />
@@ -113,21 +115,21 @@
       <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
       <supportedOn ref="windows:SUPPORTED_WindowsVista" />
       <elements>
-        <list id="LST_66B13B7A_E275_499B_916A_A6D0CFFE6284" valueName="pin_policy_slots" additive="true" />
+        <multiText id="LST_66B13B7A_E275_499B_916A_A6D0CFFE6284" valueName="pin_policy_slots" maxLength="2" maxStrings="4" />
       </elements>
     </policy>
     <policy name="POL_875D8BD9_862A_4994_B8AD_7DCAC251FFD8" class="User" displayName="$(string.POL_875D8BD9_862A_4994_B8AD_7DCAC251FFD8)" explainText="$(string.POL_875D8BD9_862A_4994_B8AD_7DCAC251FFD8_Help)" presentation="$(presentation.POL_875D8BD9_862A_4994_B8AD_7DCAC251FFD8)" key="Software\Yubico\YubiKey PIV Manager">
       <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
       <supportedOn ref="windows:SUPPORTED_WindowsVista" />
       <elements>
-        <list id="LST_0DED5C32_D395_46B3_ACF0_A760FC4F0EDB" valueName="shown_outs" additive="true" />
+        <multiText id="LST_0DED5C32_D395_46B3_ACF0_A760FC4F0EDB" valueName="shown_outs" maxLength="3" maxStrings="4" />
       </elements>
     </policy>
     <policy name="POL_5E153A75_EF31_4D81_BAD1_95C3E219DFFC" class="User" displayName="$(string.POL_5E153A75_EF31_4D81_BAD1_95C3E219DFFC)" explainText="$(string.POL_5E153A75_EF31_4D81_BAD1_95C3E219DFFC_Help)" presentation="$(presentation.POL_5E153A75_EF31_4D81_BAD1_95C3E219DFFC)" key="Software\Yubico\YubiKey PIV Manager">
       <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
       <supportedOn ref="windows:SUPPORTED_WindowsVista" />
       <elements>
-        <list id="LST_BAD05216_5296_49D6_94A7_354E7B38C9DE" valueName="shown_slots" additive="true" />
+        <multiText id="LST_BAD05216_5296_49D6_94A7_354E7B38C9DE" valueName="shown_slots" maxLength="2" maxStrings="4" />
       </elements>
     </policy>
     <policy name="POL_2B7E76CC_4EE2_46DA_A06E_8CBCB670F1AA" class="User" displayName="$(string.POL_2B7E76CC_4EE2_46DA_A06E_8CBCB670F1AA)" explainText="$(string.POL_2B7E76CC_4EE2_46DA_A06E_8CBCB670F1AA_Help)" presentation="$(presentation.POL_2B7E76CC_4EE2_46DA_A06E_8CBCB670F1AA)" key="Software\Yubico\YubiKey PIV Manager">
@@ -141,7 +143,7 @@
       <parentCategory ref="CAT_79BEA359_E17F_469A_8036_A886EA714E4E" />
       <supportedOn ref="windows:SUPPORTED_WindowsVista" />
       <elements>
-        <list id="LST_EAE61858_8179_476C_B405_31FB2B8BE40C" valueName="touch_policy_slots" additive="true" />
+        <multiText id="LST_EAE61858_8179_476C_B405_31FB2B8BE40C" valueName="touch_policy_slots" maxLength="2" maxStrings="4" />
       </elements>
     </policy>
   </policies>
