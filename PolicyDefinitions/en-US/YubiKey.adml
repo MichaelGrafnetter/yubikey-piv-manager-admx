@@ -5,90 +5,90 @@
   <description>YubiKey PIV Manager Settings</description>
   <resources>
     <stringTable>
-      <string id="CAT_79BEA359_E17F_469A_8036_A886EA714E4E">YubiKey PIV Manager</string>
-      <string id="POL_1F087619_B054_473D_8E6D_1FCB28B45A88">Enforce Touch Policy</string>
-      <string id="POL_1F087619_B054_473D_8E6D_1FCB28B45A88_Help">When enabled, the YubiKey will require its button to be touched to perform any action with the private key of a slot.</string>
-      <string id="POL_2294FFA5_4434_4D0E_8822_50525EA98221">Algorithm</string>
-      <string id="POL_2294FFA5_4434_4D0E_8822_50525EA98221_Help">Which algorithm to use for key pair generation.</string>
-      <string id="ITM_EA466378_DCBB_4727_8524_12776C1EA6F0">RSA-1024</string>
-      <string id="ITM_F0E26401_6589_434E_A820_06FF0D6A7D73">RSA-2048</string>
-      <string id="ITM_1D3D7DF0_880F_4D93_9186_91AC3261FB43">ECC P-256</string>
-      <string id="ITM_981F8BE3_9B26_48AB_90FE_E6FCBF16F6E5">ECC P-384</string>
-      <string id="POL_9425A436_8247_452E_AA50_1F7D7FD71556">Card Reader</string>
-      <string id="POL_9425A436_8247_452E_AA50_1F7D7FD71556_Help">String to match against when looking for compatible YubiKey devices.</string>
-      <string id="POL_BD4C729A_C091_4318_B5D7_A195A3825966">Certreq Template</string>
-      <string id="POL_BD4C729A_C091_4318_B5D7_A195A3825966_Help">Value to use in CertificateTemplate parameter when calling certreq.exe.</string>
-      <string id="POL_233A3476_0D2B_4738_8366_D67FEA06603C">Complex PIN/PUKs</string>
-      <string id="POL_233A3476_0D2B_4738_8366_D67FEA06603C_Help">True to require complex PINs and PUKs.</string>
-      <string id="POL_C42A1915_6924_43A9_BE0D_82114DFF9D5B">Enable Certificate Import</string>
-      <string id="POL_C42A1915_6924_43A9_BE0D_82114DFF9D5B_Help">When False, hide the "import from file…" button for certificates.</string>
-      <string id="POL_91E61170_5C0B_4043_A188_7D5F04A821D4">PIN as Management Key</string>
-      <string id="POL_91E61170_5C0B_4043_A188_7D5F04A821D4_Help">When true, the Management Key is based off of the PIN.</string>
-      <string id="POL_3DA9E7C1_DBA7_449F_B646_A2B5B59A968B">PIN Expiration</string>
-      <string id="POL_3DA9E7C1_DBA7_449F_B646_A2B5B59A968B_Help">When non-zero causes a timestamp to be written when the PIN is changed, and to force a PIN change after the specified number of days.</string>
-      <string id="POL_CB16580F_C028_4345_8D69_4D5EEC964065">PIN Requirement Policy</string>
-      <string id="POL_CB16580F_C028_4345_8D69_4D5EEC964065_Help">When set to a value other than "default", override the PIV standard for when the PIN is required for using a particular slot.</string>
-      <string id="ITM_E42AED55_82E8_46AA_B15F_7873B2B0ADDF">Default</string>
-      <string id="ITM_83C17027_9DDB_45D7_92E0_8BBA6845575A">Never</string>
-      <string id="ITM_DC018F0A_D6AD_4366_94E4_003AEE1CFF0C">Once</string>
-      <string id="ITM_A962F348_952F_4FF8_ACCD_3D043C8ACA80">Always</string>
-      <string id="POL_545369F5_2903_4EFE_B7E2_114FC77F565B">PIN Policy Slots</string>
-      <string id="POL_545369F5_2903_4EFE_B7E2_114FC77F565B_Help">Which certificate slots to show the PIN Requirement Policy setting for.
+      <string id="YubiKeyPIVManager">YubiKey PIV Manager</string>
+      <string id="YubiKeyPIVManager_TouchPolicy">Enforce Touch Policy</string>
+      <string id="YubiKeyPIVManager_TouchPolicy_Help">When enabled, the YubiKey will require its button to be touched to perform any action with the private key of a slot.</string>
+      <string id="YubiKeyPIVManager_Algorithm">Algorithm</string>
+      <string id="YubiKeyPIVManager_Algorithm_Help">Which algorithm to use for key pair generation.</string>
+      <string id="YubiKeyPIVManager_Algorithm_RSA1024">RSA-1024</string>
+      <string id="YubiKeyPIVManager_Algorithm_RSA2048">RSA-2048</string>
+      <string id="YubiKeyPIVManager_Algorithm_ECC256">ECC P-256</string>
+      <string id="YubiKeyPIVManager_Algorithm_ECC384">ECC P-384</string>
+      <string id="YubiKeyPIVManager_CardReader">Card Reader</string>
+      <string id="YubiKeyPIVManager_CardReader_Help">String to match against when looking for compatible YubiKey devices.</string>
+      <string id="YubiKeyPIVManager_Template">Certreq Template</string>
+      <string id="YubiKeyPIVManager_Template_Help">Value to use in CertificateTemplate parameter when calling certreq.exe.</string>
+      <string id="YubiKeyPIVManager_ComplexPins">Complex PIN/PUKs</string>
+      <string id="YubiKeyPIVManager_ComplexPins_Help">True to require complex PINs and PUKs.</string>
+      <string id="YubiKeyPIVManager_EnableImport">Enable Certificate Import</string>
+      <string id="YubiKeyPIVManager_EnableImport_Help">When False, hide the "import from file…" button for certificates.</string>
+      <string id="YubiKeyPIVManager_PinAsKey">PIN as Management Key</string>
+      <string id="YubiKeyPIVManager_PinAsKey_Help">When true, the Management Key is based off of the PIN.</string>
+      <string id="YubiKeyPIVManager_PinExpiration">PIN Expiration</string>
+      <string id="YubiKeyPIVManager_PinExpiration_Help">When non-zero causes a timestamp to be written when the PIN is changed, and to force a PIN change after the specified number of days.</string>
+      <string id="YubiKeyPIVManager_PinPolicy">PIN Requirement Policy</string>
+      <string id="YubiKeyPIVManager_PinPolicy_Help">When set to a value other than "default", override the PIV standard for when the PIN is required for using a particular slot.</string>
+      <string id="YubiKeyPIVManager_PinPolicy_Default">Default</string>
+      <string id="YubiKeyPIVManager_PinPolicy_Never">Never</string>
+      <string id="YubiKeyPIVManager_PinPolicy_Once">Once</string>
+      <string id="YubiKeyPIVManager_PinPolicy_Always">Always</string>
+      <string id="YubiKeyPIVManager_PinPolicySlots">PIN Policy Slots</string>
+      <string id="YubiKeyPIVManager_PinPolicySlots_Help">Which certificate slots to show the PIN Requirement Policy setting for.
 Possible values are 9a, 9c, 9d and 9e.
 Default is none.</string>
-      <string id="POL_875D8BD9_862A_4994_B8AD_7DCAC251FFD8">Displayed Output Formats</string>
-      <string id="POL_875D8BD9_862A_4994_B8AD_7DCAC251FFD8_Help">Output formats available when generating a key.
+      <string id="YubiKeyPIVManager_ShownOuts">Displayed Output Formats</string>
+      <string id="YubiKeyPIVManager_ShownOuts_Help">Output formats available when generating a key.
 Possible values are pk, ssc, csr and ca.
 Default values are ssc, csr and ca.</string>
-      <string id="POL_5E153A75_EF31_4D81_BAD1_95C3E219DFFC">Displayed Certificate Slots</string>
-      <string id="POL_5E153A75_EF31_4D81_BAD1_95C3E219DFFC_Help">A list of which certificate slots to show in the UI.
+      <string id="YubiKeyPIVManager_ShownSlots">Displayed Certificate Slots</string>
+      <string id="YubiKeyPIVManager_ShownSlots_Help">A list of which certificate slots to show in the UI.
 Possible values are 9a, 9c, 9d and 9e.
 All slots are shown by default.</string>
-      <string id="POL_2B7E76CC_4EE2_46DA_A06E_8CBCB670F1AA">Subject DN</string>
-      <string id="POL_2B7E76CC_4EE2_46DA_A06E_8CBCB670F1AA_Help">Subject to use when generating a CSR or self-signed certificate.</string>
-      <string id="POL_87F0FBB3_7026_4268_B311_C9C81E7093EC">Touch Policy Slots</string>
-      <string id="POL_87F0FBB3_7026_4268_B311_C9C81E7093EC_Help">Which certificate slots to show the Touch Policy setting for.
+      <string id="YubiKeyPIVManager_Subject">Subject DN</string>
+      <string id="YubiKeyPIVManager_Subject_Help">Subject to use when generating a CSR or self-signed certificate.</string>
+      <string id="YubiKeyPIVManager_TouchPolicySlots">Touch Policy Slots</string>
+      <string id="YubiKeyPIVManager_TouchPolicySlots_Help">Which certificate slots to show the Touch Policy setting for.
 Possible values are 9a, 9c, 9d and 9e.
 Default value is none.</string>
     </stringTable>
     <presentationTable>
-      <presentation id="POL_2294FFA5_4434_4D0E_8822_50525EA98221">
-        <dropdownList refId="DST_49AEAAFA_ADA3_41A9_871D_072A3291859E" defaultItem="1">Cryptographic algorithm</dropdownList>
+      <presentation id="YubiKeyPIVManager_Algorithm">
+        <dropdownList refId="YubiKeyPIVManager_Algorithm_DropdownList" defaultItem="1">Cryptographic algorithm</dropdownList>
       </presentation>
-      <presentation id="POL_1F087619_B054_473D_8E6D_1FCB28B45A88" />
-      <presentation id="POL_9425A436_8247_452E_AA50_1F7D7FD71556">
-        <textBox refId="TXT_2EA5BA43_F51E_424E_96BC_1B3A96FFF3E1">
+      <presentation id="YubiKeyPIVManager_TouchPolicy" />
+      <presentation id="YubiKeyPIVManager_CardReader">
+        <textBox refId="YubiKeyPIVManager_CardReader_TextBox">
           <label>Card reader name</label>
         </textBox>
       </presentation>
-      <presentation id="POL_BD4C729A_C091_4318_B5D7_A195A3825966">
-        <textBox refId="TXT_684E12BE_4725_4F22_98DF_746C2B258FF4">
+      <presentation id="YubiKeyPIVManager_Template">
+        <textBox refId="YubiKeyPIVManager_Template_TextBox">
           <label>Certificate template</label>
         </textBox>
       </presentation>
-      <presentation id="POL_3DA9E7C1_DBA7_449F_B646_A2B5B59A968B">
-        <decimalTextBox refId="DXT_834F33B1_050F_4255_B351_854CBFECBDF6" defaultValue="0">Pin expiration in days</decimalTextBox>
+      <presentation id="YubiKeyPIVManager_PinExpiration">
+        <decimalTextBox refId="YubiKeyPIVManager_PinExpiration_TextBox" defaultValue="0">Pin expiration in days</decimalTextBox>
       </presentation>
-      <presentation id="POL_CB16580F_C028_4345_8D69_4D5EEC964065">
-        <dropdownList refId="DST_AE1ED5B6_55BD_49CA_8D39_1D76D9390380" defaultItem="0">Policy</dropdownList>
+      <presentation id="YubiKeyPIVManager_PinPolicy">
+        <dropdownList refId="YubiKeyPIVManager_PinPolicy_DropdownList" defaultItem="0">Policy</dropdownList>
       </presentation>
-      <presentation id="POL_545369F5_2903_4EFE_B7E2_114FC77F565B">
-        <multiTextBox refId="LST_66B13B7A_E275_499B_916A_A6D0CFFE6284">Slots</multiTextBox>
+      <presentation id="YubiKeyPIVManager_PinPolicySlots">
+        <multiTextBox refId="YubiKeyPIVManager_PinPolicySlots_MultiText">Slots</multiTextBox>
       </presentation>
-      <presentation id="POL_875D8BD9_862A_4994_B8AD_7DCAC251FFD8">
-        <multiTextBox refId="LST_0DED5C32_D395_46B3_ACF0_A760FC4F0EDB">Formats</multiTextBox>
+      <presentation id="YubiKeyPIVManager_ShownOuts">
+        <multiTextBox refId="YubiKeyPIVManager_ShownOuts_MultiText">Formats</multiTextBox>
       </presentation>
-      <presentation id="POL_5E153A75_EF31_4D81_BAD1_95C3E219DFFC">
-        <multiTextBox refId="LST_BAD05216_5296_49D6_94A7_354E7B38C9DE">Slots</multiTextBox>
+      <presentation id="YubiKeyPIVManager_ShownSlots">
+        <multiTextBox refId="YubiKeyPIVManager_ShownSlots_MultiText">Slots</multiTextBox>
       </presentation>
-      <presentation id="POL_2B7E76CC_4EE2_46DA_A06E_8CBCB670F1AA">
-        <textBox refId="TXT_CCA871ED_9038_4E9D_89F5_8394771241DF">
+      <presentation id="YubiKeyPIVManager_Subject">
+        <textBox refId="YubiKeyPIVManager_Subject_TextBox">
           <label>Subject</label>
           <defaultValue>/CN=%USERNAME%</defaultValue>
         </textBox>
       </presentation>
-      <presentation id="POL_87F0FBB3_7026_4268_B311_C9C81E7093EC">
-        <multiTextBox refId="LST_EAE61858_8179_476C_B405_31FB2B8BE40C">Slots</multiTextBox>
+      <presentation id="YubiKeyPIVManager_TouchPolicySlots">
+        <multiTextBox refId="YubiKeyPIVManager_TouchPolicySlots_MultiText">Slots</multiTextBox>
       </presentation>
     </presentationTable>
   </resources>
