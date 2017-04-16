@@ -121,6 +121,16 @@
     <xs:attribute name="valueName" type="pd:registryValueName" use="required"/>
   </xs:complexType>
 
+  <xs:complexType name="multiTextElement">
+    <xs:annotation>
+      <xs:documentation>Describes a multi line text element in a policy</xs:documentation>
+    </xs:annotation>
+    <xs:attributeGroup ref="pd:PolicyElementAttributeGroup"/>
+    <xs:attribute name="required" type="xs:boolean" default="false"/>
+    <xs:attribute name="maxLength" type="xs:unsignedInt" default="1023"/>
+    <xs:attribute name="maxStrings" type="xs:unsignedInt" default="0"/>
+    <xs:attribute name="soft" type="xs:boolean" default="false"/>
+  </xs:complexType>
 
   <!--
 		Presentation of policy elements
@@ -168,6 +178,18 @@
     </xs:complexContent>
   </xs:complexType>
 
+  <xs:complexType name="MultiTextBox">
+    <xs:annotation>
+      <xs:documentation>Represents a multi-line textbox display element.</xs:documentation>
+      <xs:documentation>Can be associated with a multiTextElement.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="pd:DataElementContent">
+        <xs:attribute name="showAsDialog" type="xs:boolean" default="false"/>
+        <xs:attribute name="defaultHeight" type="xs:unsignedInt" default="3"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
 
   <xs:complexType name="CheckBox">
     <xs:annotation>
@@ -231,6 +253,7 @@
       <xs:element name="comboBox" type="pd:ComboBox"/>
       <xs:element name="dropdownList" type="pd:DropdownList"/>
       <xs:element name="listBox" type="pd:ListBox"/>
+      <xs:element name="multiTextBox" type="pd:MultiTextBox"/>
     </xs:choice>
     <xs:attribute name="id" type="pd:resourceID" use="required"/>
   </xs:complexType>
@@ -426,6 +449,7 @@
       <xs:element name="text" type="pd:TextElement"/>
       <xs:element name="enum" type="pd:EnumerationElement"/>
       <xs:element name="list" type="pd:ListElement"/>
+      <xs:element name="multiText" type="pd:multiTextElement"/>
     </xs:choice>
   </xs:complexType>
 </xs:schema>
