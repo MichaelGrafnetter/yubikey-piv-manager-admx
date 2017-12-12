@@ -9,15 +9,15 @@
       <string id="YubiKeyPIVManager_TouchPolicy">Configuration de la stratégie de la fonction tactile</string>
       <string id="YubiKeyPIVManager_TouchPolicy_Help">Ce paramètre de stratégie configure la liste des emplacements de certificat dont on doit afficher les paramètres de stratégie de la fonction tactile.
 
-If you enable this policy setting, the option to choose the touch policy will be shown for the selected slots. These values are supported:
-9a - Authentication
-9c - Digital Signature
-9d - Key Management
-9e - Card Authentication
+Si vous activez ce paramètre de stratégie, l'option pour choisir la politique tactile sera affichée pour les emplacements sélectionnés. Les valeurs prises en charge sont les suivantes :
+9a - Authentification
+9c - Signature
+9d - Gestion des clés
+9e - Authentification de/avec(?) la carte
 
-If you also select the "Always require touch on the slots above" option, the YubiKey will always require its button to be touched to perform any action with the private keys of the slots specified.
+Si vous sélectionnez également l'option "Toujours avoir besoin d'appuyer pour les emplacements ci-dessus", la clé YubiKey aura toujours besoin d'être touchée pour effectuer toute action avec les clés privées des emplacements spécifiées.
 
-If you disable or do not configure this policy setting, the options will be hidden in the UI and the default slot-specific touch policies will be used.</string>
+Si vous désactivez ou ne configurez pas ce paramètre de stratégie, les options seront masquées dans l'interface utilisateur et les stratégies tactiles spécifiques à l'emplacement par défaut seront utilisées. </string>
       <string id="YubiKeyPIVManager_Algorithm_Select">User-defined</string>
       <string id="YubiKeyPIVManager_Algorithm_RSA1024">RSA-1024</string>
       <string id="YubiKeyPIVManager_Algorithm_RSA2048">RSA-2048</string>
