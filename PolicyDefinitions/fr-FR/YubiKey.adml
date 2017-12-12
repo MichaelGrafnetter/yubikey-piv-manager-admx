@@ -18,99 +18,99 @@ Si vous activez ce paramètre de stratégie, l'option pour choisir la politique 
 Si vous sélectionnez également l'option "Toujours avoir besoin d'appuyer pour les emplacements ci-dessus", la clé YubiKey aura toujours besoin d'être touchée pour effectuer toute action avec les clés privées des emplacements spécifiées.
 
 Si vous désactivez ou ne configurez pas ce paramètre de stratégie, les options seront masquées dans l'interface utilisateur et les stratégies tactiles spécifiques à l'emplacement par défaut seront utilisées. </string>
-      <string id="YubiKeyPIVManager_Algorithm_Select">User-defined</string>
+      <string id="YubiKeyPIVManager_Algorithm_Select">Défini par l'utilisateur</string>
       <string id="YubiKeyPIVManager_Algorithm_RSA1024">RSA-1024</string>
       <string id="YubiKeyPIVManager_Algorithm_RSA2048">RSA-2048</string>
       <string id="YubiKeyPIVManager_Algorithm_ECC256">ECC P-256</string>
       <string id="YubiKeyPIVManager_Algorithm_ECC384">ECC P-384</string>
-      <string id="YubiKeyPIVManager_CardReader">Set card reader name filter</string>
-      <string id="YubiKeyPIVManager_CardReader_Help">This policy setting configures the string to match against when looking for compatible YubiKey devices.
+      <string id="YubiKeyPIVManager_CardReader">Définir le filtre de nom du lecteur de carte</string>
+      <string id="YubiKeyPIVManager_CardReader_Help">Ce paramètre de stratégie configure la chaîne de caractères pour qu'elle corresponde aux périphériques YubiKey compatibles.
 
-If you enable this policy setting, only YubiKeys from matching card readers will be shown in the UI.
+Si vous activez ce paramètre de politique, seuls les YubiKeys des lecteurs de cartes correspondants seront affichés dans l'interface utilisateur.
 
-If you disable or do not configure this policy setting, all YubiKey devices will be shown in the UI.</string>
-      <string id="YubiKeyPIVManager_Request">Set certificate request properties</string>
-      <string id="YubiKeyPIVManager_Request_Help">This policy setting configures the properties of generated certificates and certificate signing requests.
+Si vous désactivez ou ne configurez pas ce paramètre de stratégie, tous les périphériques YubiKey seront affichés dans l'interface utilisateur.</string>
+      <string id="YubiKeyPIVManager_Request">Définir les propriétés des demandes de certificat</string>
+      <string id="YubiKeyPIVManager_Request_Help">Ce paramètre de stratégie configure les propriétés des certificats générés et des demandes de signature de certificat.
 
-If you enable this policy setting, the specified values will be used by the YubiKey PIV Manager.
+Si vous activez ce paramètre, les valeurs spécifiées seront utilisées par le YubiKey PIV Manager.
 
-If you disable or do not configure this policy setting, application defaults will be used.</string>
-      <string id="YubiKeyPIVManager_DisableImport">Disable certificate import</string>
-      <string id="YubiKeyPIVManager_DisableImport_Help">This policy setting controls the ability to import certificates.
+Si vous désactivez ou ne configurez pas ce paramètre, les paramètres par défaut de l'application seront utilisés.</string>
+      <string id="YubiKeyPIVManager_DisableImport">Désactiver l'importation de certificat</string>
+      <string id="YubiKeyPIVManager_DisableImport_Help">Ce paramètre de stratégie contrôle la capacité d'importer des certificats.
 
-If you enable this policy setting, the "Import from file..." button will be hidden in the UI.
+Si vous activez ce paramètre de stratégie, le bouton "Import from file..." sera caché dans l'interface utilisateur.
 
-If you disable or do not configure this policy setting,  the "Import from file..." button will be shown in the UI.</string>
-      <string id="YubiKeyPIVManager_PinPolicy">Configure PIN Policy</string>
-      <string id="YubiKeyPIVManager_PinPolicy_Help">This policy setting configures the requirements for PIN usage.
+Si vous désactivez ou ne configurez pas ce paramètre de stratégie, le bouton "Import from file..." s'affichera dans l'interface utilisateur.</string>
+      <string id="YubiKeyPIVManager_PinPolicy">Configuration de la politique sur les PIN</string>
+      <string id="YubiKeyPIVManager_PinPolicy_Help">Ce paramètre de stratégie configure les pré-requis pour l'utilisation du code PIN.
 
-If you enable this policy setting, the default application behavior will be overriden.
+Si vous activez ce paramètre de stratégie, le comportement par défaut de l'application sera outrepassé.
 
-The PIN Requirement Policy setting will only be shown for the certificate slots listed. These certificate slot identifiers are supported:
-9a - Authentication
-9c - Digital Signature
-9d - Key Management
-9e - Card Authentication
+Le paramètre de la stratégie relative aux exigences relatives au PIN ne sera affiché que pour les emplacements de certificat répertoriés. Ces identifiants d'emplacement de certificat sont pris en charge:
+9a - Authentification
+9c - Signature
+9d - Gestion des clés
+9e - Authentification de la carte
 
-When the PIN Requirement Policy is set to a value other than "Slot defaults", the PIV standard for when the PIN is required for using a particular slot will be overridden.
+Lorsque la stratégie relative aux exigences relatives au PIN est réglée sur une valeur autre que "Emplacement par défaut", la norme PIV pour le moment où le PIN est requis pour utiliser un emplacement particulier sera remplacée.
 
-Non-zero PIN expiration interval causes a timestamp to be written when the PIN is changed, and to force a PIN change after the specified number of days.
+L'intervalle d'expiration du code PIN différent de zéro entraîne l'écriture d'un horodatage lorsque le code PIN est modifié et force un changement de code PIN après le nombre de jours spécifié.
 
-If you disable or do not configure this policy setting, slot-specific PIN policy will not be configurable through the UI.</string>
-      <string id="YubiKeyPIVManager_PinPolicy_Select">User-defined</string>
-      <string id="YubiKeyPIVManager_PinPolicy_Default">Slot defaults</string>
-      <string id="YubiKeyPIVManager_PinPolicy_Never">Never</string>
-      <string id="YubiKeyPIVManager_PinPolicy_Once">Once</string>
-      <string id="YubiKeyPIVManager_PinPolicy_Always">Always</string>
-      <string id="YubiKeyPIVManager_ShownOuts">Only display the specified output formats</string>
-      <string id="YubiKeyPIVManager_ShownOuts_Help">This policy setting determines the output formats that are available when generating a key.
+Si vous désactivez ou ne configurez pas ce paramètre de stratégie, la politique de code PIN spécifique à l'emplacement ne sera pas configurable via l'interface utilisateur.</string>
+      <string id="YubiKeyPIVManager_PinPolicy_Select">Défini par l'utilisateur</string>
+      <string id="YubiKeyPIVManager_PinPolicy_Default">Valeur par défaut de l'emplacement</string>
+      <string id="YubiKeyPIVManager_PinPolicy_Never">Jamais</string>
+      <string id="YubiKeyPIVManager_PinPolicy_Once">Une seule fois</string>
+      <string id="YubiKeyPIVManager_PinPolicy_Always">Toujours</string>
+      <string id="YubiKeyPIVManager_ShownOuts">Afficher uniquement les formats de sortie spécifiés</string>
+      <string id="YubiKeyPIVManager_ShownOuts_Help">Ce paramètre détermine les formats de sortie disponibles lors de la génération d'une clé.
 
-If you enable this policy setting, only the specified output formats will be shown. Supported formats are "pk", "ssc", "csr" and "ca".
+Si vous activez ce paramètre, seuls les formats de sortie spécifiés seront affichés. Les formats supportés sont "pk","ssc","csr" et "ca".
 
-If you disable or do not configure this policy setting, the "ssc", "csr" and "ca" formats will be available.</string>
-      <string id="YubiKeyPIVManager_ShownSlots">Only display the specified certificate slots</string>
-      <string id="YubiKeyPIVManager_ShownSlots_Help">This policy setting determines the certificate slots that are shown in the UI.
+Si vous désactivez ou ne configurez pas ce paramètre de stratégie, les formats "ssc","csr" et "ca" seront disponibles.</string>
+      <string id="YubiKeyPIVManager_ShownSlots">Afficher uniquement les emplacements de certificat spécifiés</string>
+      <string id="YubiKeyPIVManager_ShownSlots_Help">Ce paramètre détermine les emplacements de certificat affichés dans l'interface utilisateur.
 
-If you enable this policy setting, only the specified certificate slots will be shown in the UI. These values are supported:
-9a - Authentication
-9c - Digital Signature
-9d - Key Management
-9e - Card Authentication
+Si vous activez ce paramètre de stratégie, seuls les emplacements de certificat spécifiés seront affichés dans l'interface utilisateur. Ces valeurs sont prises en charge:
+9a - Authentification
+9c - Signature
+9d - Gestion des clés
+9e - Authentification de la carte
 
-If you disable or do not configure this policy setting, all four certificate slots will be shown.</string>
+Si vous désactivez ou ne configurez pas ce paramètre de stratégie, les quatre emplacements de certificat seront affichés.</string>
     </stringTable>
     <presentationTable>
       <presentation id="YubiKeyPIVManager_TouchPolicy">
-        <multiTextBox refId="YubiKeyPIVManager_TouchPolicySlots_MultiText">Allow the default touch policy to be overriden on these slots:</multiTextBox>
-        <checkBox refId="YubiKeyPIVManager_TouchPolicy_CheckBox" defaultChecked="false">Always require touch on the slots above</checkBox>
+        <multiTextBox refId="YubiKeyPIVManager_TouchPolicySlots_MultiText">Permettez à la stratégie tactile par défaut d'être remplacée sur ces emplacements :</multiTextBox>
+        <checkBox refId="YubiKeyPIVManager_TouchPolicy_CheckBox" defaultChecked="false">Toujours demander une touche sur les emplacements ci-dessus.</checkBox>
       </presentation>
       <presentation id="YubiKeyPIVManager_CardReader">
         <textBox refId="YubiKeyPIVManager_CardReader_TextBox">
-          <label>Card reader name:</label>
+          <label>Nom du lecteur de carte :</label>
         </textBox>
       </presentation>
       <presentation id="YubiKeyPIVManager_Request">
-        <dropdownList refId="YubiKeyPIVManager_Algorithm_DropdownList" defaultItem="0" noSort="true">Cryptographic algorithm to use for key pair generation:</dropdownList>
+        <dropdownList refId="YubiKeyPIVManager_Algorithm_DropdownList" defaultItem="0" noSort="true">Algorithme cryptographique à utiliser pour la génération de paires de clés :</dropdownList>
         <textBox refId="YubiKeyPIVManager_Subject_TextBox">
           <label>Subject Distinguished Name:</label>
           <defaultValue>/CN=%USERNAME%</defaultValue>
         </textBox>
         <textBox refId="YubiKeyPIVManager_Template_TextBox">
-          <label>Certificate template name (for certreq.exe):</label>
+          <label>Certificate template name (pour certreq.exe):</label>
         </textBox>
       </presentation>
       <presentation id="YubiKeyPIVManager_PinPolicy">
-        <multiTextBox refId="YubiKeyPIVManager_PinPolicySlots_MultiText">Enable PIN Requirement Policy selection for these slots:</multiTextBox>
-        <dropdownList refId="YubiKeyPIVManager_PinPolicy_DropdownList" defaultItem="0" noSort="true">PIN Requirement Policy:</dropdownList>
-        <checkBox refId="YubiKeyPIVManager_ComplexPins_CheckBox" defaultChecked="false">Enforce complex PINs and PUKs</checkBox>
-        <decimalTextBox refId="YubiKeyPIVManager_PinExpiration_TextBox" defaultValue="0">PIN expiration interval (days):</decimalTextBox>
-        <checkBox refId="YubiKeyPIVManager_PinAsKey_CheckBox" defaultChecked="false">Derive the Management Key from PIN</checkBox>
+        <multiTextBox refId="YubiKeyPIVManager_PinPolicySlots_MultiText">Activer la sélection de la politique sur les exigences relatives aux PIN pour ces emplacements :</multiTextBox>
+        <dropdownList refId="YubiKeyPIVManager_PinPolicy_DropdownList" defaultItem="0" noSort="true">Politique sur les exigences relatives aux PIN :</dropdownList>
+        <checkBox refId="YubiKeyPIVManager_ComplexPins_CheckBox" defaultChecked="false">Appliquer les PIN et PUK complexes</checkBox>
+        <decimalTextBox refId="YubiKeyPIVManager_PinExpiration_TextBox" defaultValue="0">Intervalle d'expériation du PIN (jours) :</decimalTextBox>
+        <checkBox refId="YubiKeyPIVManager_PinAsKey_CheckBox" defaultChecked="false">Dériver la clé de gestion à partir du code PIN</checkBox>
       </presentation>
       <presentation id="YubiKeyPIVManager_ShownOuts">
-        <multiTextBox refId="YubiKeyPIVManager_ShownOuts_MultiText">Formats to show:</multiTextBox>
+        <multiTextBox refId="YubiKeyPIVManager_ShownOuts_MultiText">Formats à afficher :</multiTextBox>
       </presentation>
       <presentation id="YubiKeyPIVManager_ShownSlots">
-        <multiTextBox refId="YubiKeyPIVManager_ShownSlots_MultiText">Slots to show in the UI:</multiTextBox>
+        <multiTextBox refId="YubiKeyPIVManager_ShownSlots_MultiText">Emplacements à afficher dans l'interface utilisateur :</multiTextBox>
       </presentation>
     </presentationTable>
   </resources>
