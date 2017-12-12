@@ -6,8 +6,8 @@
   <resources>
     <stringTable>
       <string id="YubiKeyPIVManager">YubiKey PIV Manager</string>
-      <string id="YubiKeyPIVManager_TouchPolicy">Configure Touch Policy</string>
-      <string id="YubiKeyPIVManager_TouchPolicy_Help">This policy setting configures the list of certificate slots to show the Touch Policy setting for.
+      <string id="YubiKeyPIVManager_TouchPolicy">Configuration de la stratégie de la fonction tactile</string>
+      <string id="YubiKeyPIVManager_TouchPolicy_Help">Ce paramètre de stratégie configure la liste des emplacements de certificat dont on doit afficher les paramètres de stratégie de la fonction tactile.
 
 If you enable this policy setting, the option to choose the touch policy will be shown for the selected slots. These values are supported:
 9a - Authentication
